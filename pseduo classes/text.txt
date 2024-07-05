@@ -1,0 +1,13 @@
+a:link {} 'linkin henüz tıklanılmamış halidir'
+a:hover {} 'linkin üzerine geldiğinde nasıl gözüktüğüdür'
+a:visited {} 'linkin daha önce tıklanılmış halidir'
+a:active {} 'linkin tıklanıldığı andaki halidir'
+input:focus 'inputa tıklanıldığındaki halidir'
+
+DAHA FAZLASI W3SCHOOLDA BULABİLİRSİN.
+
+*Sadece linkler için kullanılmaz, herhangi bir yere tıklanıldığında veya üzerine gelindiğinde de pseduo clasları kullanılabilir.
+
+*Mesela bir divin üzerine geldiğinde, veya bir span etiketinin üzerine geldiğinde geriye kalan metin gösterilebilir.
+
+*Veya bir etiketin üzerine gelindiğinde başka bir etiket kaybolsun veya görünsün. Ya da renk değişimleri olsun. Örnekler çoğaltılabilir...
