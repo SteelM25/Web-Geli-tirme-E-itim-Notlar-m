@@ -1,0 +1,173 @@
+CSS'de pseudo elementler, seçicilerle birlikte kullanılan ve belirli HTML öğelerinin belirli kısımlarını hedef alan özel elemanlardır. Pseudo elementler, gerçek DOM öğeleri oluşturmadan içeriği eklemenizi veya stil değişiklikleri yapmanızı sağlar. En yaygın pseudo elementler `::before` ve `::after` elementleridir. İşte bunlar ve diğer bazı pseudo elementler hakkında ayrıntılı bir açıklama:
+
+### 1. `::before` ve `::after` Pseudo Elementleri
+
+Bu pseudo elementler, bir öğenin içeriklerinden önce veya sonra içerik eklemek için kullanılır. Genellikle içerik eklemek veya süslemek için kullanılırlar. İşte bazı örnekler:
+
+#### Örnek 1: `::before` Kullanımı
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .example::before {
+            content: "Önce: ";
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <title>Pseudo Element Example</title>
+</head>
+<body>
+    <p class="example">Bu bir paragraf örneğidir.</p>
+</body>
+</html>
+```
+
+Bu kodda, `.example` sınıfına sahip paragrafların başına "Önce: " metni eklenir ve kırmızı renkte, kalın yazılır.
+
+#### Örnek 2: `::after` Kullanımı
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .example::after {
+            content: " Sonra.";
+            color: blue;
+            font-style: italic;
+        }
+    </style>
+    <title>Pseudo Element Example</title>
+</head>
+<body>
+    <p class="example">Bu bir paragraf örneğidir.</p>
+</body>
+</html>
+```
+
+Bu kodda, `.example` sınıfına sahip paragrafların sonuna " Sonra." metni eklenir ve mavi renkte, italik yazılır.
+
+### 2. `::first-line` Pseudo Elementi
+
+`::first-line` pseudo elementi, bir bloğun sadece ilk satırını seçer ve bu satıra stil uygular. İşte bir örnek:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p::first-line {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+    <title>Pseudo Element Example</title>
+</head>
+<body>
+    <p>Bu, ilk satırı yeşil ve kalın olan uzun bir paragraf örneğidir. Diğer satırlar normal stiline sahiptir.</p>
+</body>
+</html>
+```
+
+Bu örnekte, paragrafın sadece ilk satırı yeşil ve kalın yazılır.
+
+### 3. `::first-letter` Pseudo Elementi
+
+`::first-letter` pseudo elementi, bir bloğun ilk harfini seçer ve bu harfe stil uygular. İşte bir örnek:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p::first-letter {
+            color: purple;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+    <title>Pseudo Element Example</title>
+</head>
+<body>
+    <p>Bu, ilk harfi mor, büyük ve kalın olan bir paragraf örneğidir.</p>
+</body>
+</html>
+```
+
+Bu örnekte, paragrafın ilk harfi mor, büyük ve kalın yazılır.
+
+### 4. `::selection` Pseudo Elementi
+
+`::selection` pseudo elementi, seçilen metnin stilini değiştirir. Kullanıcı metni seçtiğinde, bu pseudo elementi ile belirlenen stil uygulanır. İşte bir örnek:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+    <title>Pseudo Element Example</title>
+</head>
+<body>
+    <p>Bu, seçildiğinde arka planı sarı ve metni siyah olan bir paragraf örneğidir.</p>
+</body>
+</html>
+```
+
+Bu örnekte, kullanıcı paragraftan bir metin seçtiğinde, seçili metin sarı arka plan ve siyah metin rengine sahip olur.
+
+### 5. Diğer Pseudo Elementler
+
+Bazı diğer pseudo elementler de belirli durumlarda kullanılabilir:
+
+- `::marker`: Listelerdeki madde işaretlerinin stilini değiştirmek için kullanılır.
+- `::placeholder`: Form alanlarında placeholder metninin stilini değiştirmek için kullanılır.
+
+#### Örnek: `::marker` Kullanımı
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li::marker {
+            color: orange;
+            font-size: 1.5em;
+        }
+    </style>
+    <title>Pseudo Element Example</title>
+</head>
+<body>
+    <ul>
+        <li>Birinci madde</li>
+        <li>İkinci madde</li>
+        <li>Üçüncü madde</li>
+    </ul>
+</body>
+</html>
+```
+
+Bu örnekte, liste maddelerinin işaretçileri turuncu renkte ve büyük boyutlu olur.
+
+### Sonuç
+
+Pseudo elementler, CSS'de çok güçlü araçlardır ve içerik eklemek, stil değişiklikleri yapmak ve kullanıcı etkileşimlerini iyileştirmek için geniş bir kullanım yelpazesine sahiptir. `::before` ve `::after` en yaygın kullanılan pseudo elementlerdir, ancak `::first-line`, `::first-letter`, `::selection` ve diğerleri de belirli durumlarda oldukça kullanışlıdır. Bu elementleri doğru bir şekilde kullanarak, web sayfalarınızın görünümünü ve kullanıcı deneyimini büyük ölçüde iyileştirebilirsiniz.
