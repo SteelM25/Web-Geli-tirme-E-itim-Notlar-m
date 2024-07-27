@@ -4,6 +4,8 @@ a:visited {} 'linkin daha önce tıklanılmış halidir'
 a:active {} 'linkin tıklanıldığı andaki halidir'
 input:focus 'inputa tıklanıldığındaki halidir'
 
+SIRALAMASI ÇOK ÖNEMLİ. LİNK,VİSİTED,HOVER,ACTİVE
+
 DAHA FAZLASI W3SCHOOLDA BULABİLİRSİN.
 
 *Sadece linkler için kullanılmaz, herhangi bir yere tıklanıldığında veya üzerine gelindiğinde de pseduo clasları kullanılabilir.
