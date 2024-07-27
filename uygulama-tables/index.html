@@ -6,11 +6,52 @@
     <title>Tables Uygulama</title>
     <style>
         img{width: 100px;}
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+        th,td{
+            padding: 10px;
+        }
+        thead tr{
+            background-color: green;
+            color:white
+        }
+        tbody tr:nth-child(odd){
+            background-color: bisque;
+            border-left: 5px dashed purple;
+            border-right: 5px inset red;
+        }
+        tbody tr:nth-child(even){
+            background-color: aqua;
+            border-left: 5px inset red;
+            border-right: 5px dashed purple;
+        }
+        
+        tbody tr:nth-child(odd):hover{
+            background-color: rgb(46, 43, 39);
+            color: white;
+            cursor: pointer;
+        }
+        tbody tr:nth-child(even):hover{
+            background-color: rgb(4, 68, 68);
+            color: white;
+            cursor: pointer;
+        }
+        th:hover{
+            font-weight: lighter;
+            color: yellow;
+            cursor: pointer;
+        }
+        td:hover{
+            background-color: yellowgreen;
+        }
     </style>
 </head>
 <body>
     
-    <table style="width: 500px;" border="1">
+    <table style="width: 50%;" border="1">
         <thead>
             <tr>
                 <th>Id</th>
@@ -37,6 +78,13 @@
                 <td><img src="images/php" alt=""></td>
             </tr>
 
+            <tr>
+                <td>3</td>
+                <td>Python İle Sıfırdan İleri Seviyeye Python Programlama</td>
+                <td>Sıfırdan İleri Seviyeye Python Dersleri</td>
+                <td><img src="images/python" alt=""></td>
+                <td>Programlama</td>
+            </tr>
             <tr>
                 <td>3</td>
                 <td>Python İle Sıfırdan İleri Seviyeye Python Programlama</td>
