@@ -1,32 +1,64 @@
 /* Texts */
 
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
-.heading-small{
-    font-size: 1.25rem;
+.heading-small {
+  font-size: 1.25rem;
 }
-.heading-medium{
-    font-size: 1.5rem;
+.heading-medium {
+  font-size: 1.5rem;
 }
-.heading-big{
-    font-size: 1.75rem;
+.heading-big {
+  font-size: 1.75rem;
 }
-
 
 /* Colors */
 
-.bg-dark-blue{
-    background-color: rgb(4, 4, 97);
+.bg-dark-blue {
+  background-color: rgb(4, 4, 97);
 }
-.bg-light-blue{
-    background-color: rgb(59, 59, 223);
+.bg-light-blue {
+  background-color: rgb(59, 59, 223);
 }
 
 /* Container */
 
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Butonlar */
+
+.btn {
+  margin-top: 1.25rem;
+  padding: 0.8rem 3rem;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+.btn-primary {
+  background-color: rgb(59, 59, 223);
+}
+.btn-primary:hover {
+  color: rgb(59, 59, 223);
+  background-color: #fff;
+  border: 1px solid rgb(59, 59, 223);
+}
+
+.btn-dark{
+    background-color: rgb(4, 4, 97);
+    color: white;
+}
+.btn-dark:hover{
+    background-color: white;
+    color: rgb(4, 4, 97);
+    border: 1px solid rgb(4, 4, 97);
+}
+
+.btn-block{
+    width: 100%;
+    text-align: center;
 }

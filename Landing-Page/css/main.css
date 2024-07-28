@@ -12,6 +12,7 @@ a{
     color: #fff;
 }
 
+/* Navbar */
 #navbar{
     color: #fff;
     display: flex;
@@ -33,3 +34,30 @@ a{
     background-color: rgb(59, 59, 223);
     border-radius: 10px;
 }
+
+/* Home Bölümü */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 2px solid orange;
+}
+
+#home img{
+    max-width: 40%;
+    height: auto;
+    border-radius: 100%;
+}
+
+#home .name h2{
+    margin-bottom: .75rem;
+}
+
+#home .name p{
+    opacity: .7;
+    font-style: italic;
+}
+
