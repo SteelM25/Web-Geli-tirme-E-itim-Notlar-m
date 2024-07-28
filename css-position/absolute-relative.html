@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer-box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* position: relative; */
+            /* relative yapınca bulunduğu konumdan itibaren hareket eder */
+
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+        /* position absolute özelliğini kullanabilmek için kapsayıcı elemanın position değeri static harici bir şey olmalı(relative, fixed vs) 
+        
+        Eğer kapsayıcı elemana static harici bir position değeri verilmezse absolute öğesi kapsayıcı olarak body'i(sayfayı) temel alır*/
+
+        .inner-box{
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+
+</body>
+</html>
