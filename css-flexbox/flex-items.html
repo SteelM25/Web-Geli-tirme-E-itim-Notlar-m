@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        text-align: center;
+        background-color: #807676;
+        width: 200px;
+        border: 1px inset blue;
+        margin: 10px;
+      }
+      .container {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        min-height: 600px; 
+        background-color: yellow;
+        flex-wrap: wrap;
+      }
+      .box-1{
+        background-color: blue;
+        order: 2;
+        /* align-self: center; */
+        /* Genelden bağımsız olarak konumu değişti */
+
+        flex-grow: 1;
+        /* Alanı kaplama oranını belirledik. Eğer sadece bu rengin boş alanları kaplamasını istersek sadece buna flexgrow özelliğini 1 vererek yapabiliriz. */
+      }
+      .box-2{
+        background-color: red;
+        order: 3;
+        /* flex-grow: 3; */
+      }
+      .box-3{
+        background-color: green;
+        /* flex-grow: 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">Lorem ipsum dolor sit amet.</div>
+      <div class="box box-2">Lorem ipsum dolor sit amet.</div>
+      <div class="box box-3">Lorem ipsum dolor sit amet.</div>
+      
+    </div>
+  </body>
+</html>
