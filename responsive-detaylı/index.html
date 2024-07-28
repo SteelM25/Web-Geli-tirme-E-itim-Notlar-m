@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .background{
+        background: url("images/light-6701418.jpg") center center no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        padding: 10rem;
+      }
+      h1{
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      p{
+        font-size: 2rem;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      /* Sadece mobil için */
+      @media(max-width:500px){
+        h1{
+            font-size: 2rem;
+            margin-bottom: .5rem
+        };
+        p{
+            font-size: 1rem;
+        }
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <h1>Welcome To The Site</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium,
+        dolore?
+      </p>
+    </div>
+  </body>
+</html>
