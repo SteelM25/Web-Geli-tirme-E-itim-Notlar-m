@@ -1,0 +1,1 @@
+taşmayı engellemek için sadece width değeri verilebilir. Veya overflow auto dersek duruma göre scrol çıkabilir. overflow scroll dersek her durumda scrol çıkar. overflow hidden dersek taşan kısımlar gizlenir.
