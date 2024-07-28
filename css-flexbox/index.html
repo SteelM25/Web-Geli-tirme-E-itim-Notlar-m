@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        text-align: center;
+        background-color: #807676;
+        width: 200px;
+        border: 1px inset blue;
+        margin: 10px;
+      }
+      .container {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        min-height: 600px; 
+        background-color: yellow;
+        flex-wrap: wrap;
+      }
+      /* justify content main axis hangisiyse ona göre space around gibi sıralamaları yapar. Yani eğer flex-direction:column ise justify content space between yapınca dikeyde öğeler köşelere yaslanarak sıralanır. */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Lorem ipsum dolor sit amet.</div>
+      <div class="box">Lorem ipsum dolor sit amet.</div>
+      <div class="box">Lorem ipsum dolor sit amet.</div>
+      <div class="box">Lorem ipsum dolor sit amet.</div>
+      <div class="box">Lorem ipsum dolor sit amet.</div>
+      <div class="box">Lorem ipsum dolor sit amet.</div>
+      <div class="box">Lorem ipsum dolor sit amet.</div>
+    </div>
+  </body>
+</html>
