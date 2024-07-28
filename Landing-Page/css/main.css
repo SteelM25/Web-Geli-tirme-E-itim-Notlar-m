@@ -61,3 +61,23 @@ a{
     font-style: italic;
 }
 
+/* Training */
+
+#training{
+    padding: 1rem;
+}
+#training .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#training .items .item{
+    width: 33%;
+    text-align: center;
+    padding: .5rem;
+}
+#training .items .item:hover{
+    color: #bbb5b5;
+    cursor: pointer;
+}

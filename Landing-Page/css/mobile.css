@@ -4,3 +4,9 @@
     height: 120px;
     padding: 1rem;
 }
+#training .items {
+    flex-direction: column;
+}
+#training .items .item{
+    width: 100%;
+}
