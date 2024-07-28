@@ -1,0 +1,6 @@
+#navbar{
+    flex-direction: column;
+    overflow: hidden;
+    height: 120px;
+    padding: 1rem;
+}
