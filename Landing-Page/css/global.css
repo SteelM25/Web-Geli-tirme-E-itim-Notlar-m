@@ -63,3 +63,13 @@
     width: 100%;
     text-align: center;
 }
+
+.margin-bottom{
+  margin-bottom: .3rem;
+}
+.letter-space{
+  letter-spacing: 1.3px;
+}
+.small-font-size{
+  font-size: .8rem;
+}
