@@ -63,6 +63,10 @@
     width: 100%;
     text-align: center;
 }
+.btn-block:hover{
+  background-color: #00ff40;
+  cursor: pointer;
+}
 
 .margin-bottom{
   margin-bottom: .3rem;
@@ -72,4 +76,20 @@
 }
 .small-font-size{
   font-size: .8rem;
+}
+
+/* Forms */
+.form-group{
+  padding: .25rem 0;
+}
+.form-group label{
+  display: block;
+}
+.form-group .form-control{
+  width: 100%;
+  padding: .25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  /* özellikle mesaj kutusu yeniden boyutlandırılmasın */
+  resize: none;
 }
