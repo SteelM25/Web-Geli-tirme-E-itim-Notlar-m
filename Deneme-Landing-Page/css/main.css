@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(27, 13, 156);
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color:  #3325b6;
+    width: 100%;
+    font-size: 1.2rem;
+}
+h1,nav{padding: 5px 20px;}
+nav{
+    display: inline-block;
+}
+.nav_links{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_links a{
+    padding: 10px;
+    border-radius: 15px;
+}
+.nav_links a:hover{
+    background-color: rgb(35, 13, 230);
+}
+#ana-sayfa img{
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+}
+
+#ana-sayfa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(238, 198, 198);
+    
+}
+#ana-sayfa p{
+    opacity: .7;
+    margin: 10px 0;
+}
+.lessons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lesson{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.lesson i{
+    font-size: 2rem;
+    color: yellow;
+    border: 1px inset yellow;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.lesson:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+#egitimler{
+    background-color: #3b26f2;
+    padding: 20px 0;
+}
+
+.course{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 40px 0;
+    position: relative;
+}
+.course img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 10px;
+}
+.fa-star{
+    position:absolute;
+    left: 10px;
+    top: 10px;
+    color: yellow;
+}

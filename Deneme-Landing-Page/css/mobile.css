@@ -1,0 +1,15 @@
+* {
+  font-size: 0.9rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+#ana-sayfa img {
+  height: 200px;
+  width: 200px; 
+}
+.lessons{
+    flex-direction: column;
+}

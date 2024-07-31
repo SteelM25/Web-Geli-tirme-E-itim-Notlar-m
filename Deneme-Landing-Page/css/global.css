@@ -1,0 +1,34 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid rgb(110, 4, 4);
+  background-color: rgb(156, 14, 14);
+  margin: 10px;
+  border-radius: 15px;
+}
+.btn-wide {
+  width: 80%;
+  text-align: center;
+}
+.text-center {
+  text-align: center;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mt-20{margin-top: 20px;}
