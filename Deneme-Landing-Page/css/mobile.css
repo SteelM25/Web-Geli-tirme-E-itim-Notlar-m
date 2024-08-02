@@ -13,3 +13,7 @@ header{
 .lessons{
     flex-direction: column;
 }
+.course{
+  flex-direction: column;
+  margin: 10px;
+}

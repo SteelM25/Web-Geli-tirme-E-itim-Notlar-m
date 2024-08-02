@@ -17,9 +17,16 @@ html {
   display: inline-block;
   padding: 10px;
   border: 1px solid rgb(110, 4, 4);
-  background-color: rgb(156, 14, 14);
+  background-color: rgb(18, 21, 206);
   margin: 10px;
   border-radius: 15px;
+  color: white;
+}
+.btn:hover{
+  background-color: rgb(0, 255, 0);
+  color: blue;
+  cursor: pointer;
+  border: 1px solid white;
 }
 .btn-wide {
   width: 80%;
@@ -27,6 +34,7 @@ html {
 }
 .text-center {
   text-align: center;
+  margin: 5px;
 }
 .mb-20 {
   margin-bottom: 20px;
