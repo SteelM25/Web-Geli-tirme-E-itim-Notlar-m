@@ -11,7 +11,6 @@
     />
     <title>Bootsrap</title>
     <style>
-      
       .box {
         height: 200px;
       }
@@ -48,7 +47,7 @@
         <div class="row"> -->
     <!-- col-sm small ekrandan küçük her kutu genişliği 100% olsun demek. Yani alt alta gelirler. Small ekran dahil değil -->
     <!-- col-md medium ekrandan küçük(small ve altı) her kutu genişliği 100% olsun demek. Yani alt alta gelirler. Medium ekran dahil değil -->
-          <!-- <div class="box bg-danger col-sm"></div>
+    <!-- <div class="box bg-danger col-sm"></div>
             <div class="box bg-primary col-sm"></div>
             <div class="box bg-success col-sm"></div>
         </div>
@@ -58,11 +57,23 @@
 
     <div class="container">
       <div class="row">
-        <div class="box bg-danger col-6 col-md-4">small ve altı ekranlarda (medium altındaki ekranlarda) ekranın yarısını, medium ve üzeri ekranlarda ekranın üçte birini kaplar</div>
-        <div class="box bg-primary col-md-8">small ekranlarda ekranın tamamını (col değeri verilmediği için), medium ve üzeri ekranlarda 12'de 8'ini kaplar</div>
+        <div class="box bg-danger col-6 col-md-4">
+          small ve altı ekranlarda (medium altındaki ekranlarda) ekranın
+          yarısını, medium ve üzeri ekranlarda ekranın üçte birini kaplar
+        </div>
+        <div class="box bg-primary col-md-8">
+          small ekranlarda ekranın tamamını (col değeri verilmediği için),
+          medium ve üzeri ekranlarda 12'de 8'ini kaplar
+        </div>
       </div>
     </div>
-    
+
+    <!-- *? Eğer sadece col-6 gibi bir değer verilirse tüm ekran boyutları için ekranın yarısını kaplar. Sadece col-md-6 gibi bir değer verilirse medium ve üzeri ekranlar için ekranın yarısını kaplar; medium altı için değer verilmediği için ekranın tamamını kaplar. -->
+
+    <!-- !Todo: Eğer hem col-6 hem de col-md-8 verilirse col md sınıfı col sınıfından önceliklidir. Haliyle medium ve üzeri ekranlarda ekranın 12'de 8'ini; medium altındaki ekranlarda ise ekranın yarısını kaplar -->
+
+    <!-- ? Eğer hem col-6 hem de col-lg-8 verilirse col-lg sınıfı col sınıfından önceliklidir. Haliyle large ve üzeri ekranlarda ekranın 12'de 8'ini; large altındaki ekranlarda (medium ve altı) ise ekranın yarısını kaplar -->
+
 
     <!-- <div class="container">
         <div class="row align-items-center justify-content-between" style="height: 600px;">
