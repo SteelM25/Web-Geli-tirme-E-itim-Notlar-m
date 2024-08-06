@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form style="width: 30rem">
+        <h3>Bilgilerinizi Giriniz</h3>
+        <hr />
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" />
+          <small class="form-text text-danger">Zorunlu Alan</small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mesaj</label>
+          <textarea name="message" id="message" class="form-control"></textarea>
+        </div>
+
+        <!-- *todo Grid sistemin özelliklerini kullanmak için kapsayıcıya form-row verdik. -->
+        <div class="form-row">
+          <div class="col-md">
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name="accept"
+                  id="accept"
+                  class="form-check-input"
+                />
+                <label for="accept" class="form-check-text"
+                  >Satış Sözleşmesini Okudum</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-group">
+              <label for="language">Diller</label>
+              <select id="language" class="form-control">
+                <option value="">Arapça</option>
+                <option selected value="">Türkçe</option>
+                <option value="">İngilizce</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Gönder</button>
+      </form>
+    </div>
+  </body>
+</html>
