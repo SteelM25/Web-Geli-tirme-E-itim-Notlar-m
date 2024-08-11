@@ -1,0 +1,111 @@
+JavaScript'te `var`, `let` ve `const` anahtar kelimeleri değişken tanımlamak için kullanılır, ancak aralarında önemli farklar vardır. Bu farklar değişkenlerin kapsamı, yeniden atanabilirliği ve tanımlandıkları bağlamlara göre farklılık gösterir. İşte her biri hakkında detaylı bilgi:
+
+### 1. `var`
+- **Kapsam (Scope):** `var` ile tanımlanan değişkenler fonksiyon kapsamına (function scope) sahiptir. Yani bir fonksiyon içinde tanımlandığında, o fonksiyonun herhangi bir yerinden erişilebilir. Ancak blok kapsamında (`if`, `for`, vb.) tanımlansa bile, fonksiyonun dışından erişilebilir.
+
+```javascript
+function example() {
+  if (true) {
+    var x = 10;
+  }
+  console.log(x); // 10
+}
+example();
+```
+
+- **Hoisting:** `var` ile tanımlanan değişkenler "hoisted" olur, yani değişken tanımlamaları kodun en üstüne taşınır. Ancak değer ataması taşınmaz.
+
+```javascript
+console.log(a); // undefined
+var a = 5;
+```
+Bu kodun aslında JavaScript motoru tarafından şu şekilde çalıştırıldığı düşünülebilir:
+```javascript
+var a;
+console.log(a); // undefined
+a = 5;
+```
+
+- **Yeniden Tanımlanabilirlik:** `var` ile tanımlanan değişkenler aynı kapsamda birden fazla kez tanımlanabilir.
+
+```javascript
+var x = 10;
+var x = 20; // Sorun yok, değişken yeniden tanımlandı
+console.log(x); // 20
+```
+
+### 2. `let`
+- **Kapsam (Scope):** `let` ile tanımlanan değişkenler blok kapsamına (block scope) sahiptir. Yani değişken sadece tanımlandığı blok içinde geçerlidir.
+
+```javascript
+function example() {
+  if (true) {
+    let y = 10;
+    console.log(y); // 10
+  }
+  console.log(y); // ReferenceError: y is not defined
+}
+example();
+```
+
+- **Hoisting:** `let` ile tanımlanan değişkenler de hoisted olur, ancak bu değişkenler temporal dead zone (TDZ) denilen bir alan içinde kalır, yani atamadan önce onlara erişmeye çalışırsanız bir hata alırsınız.
+
+```javascript
+console.log(b); // ReferenceError: Cannot access 'b' before initialization
+let b = 5;
+```
+
+- **Yeniden Tanımlanabilirlik:** `let` ile tanımlanan değişkenler aynı kapsamda birden fazla kez tanımlanamaz.
+
+```javascript
+let y = 10;
+let y = 20; // SyntaxError: Identifier 'y' has already been declared
+```
+
+### 3. `const`
+- **Kapsam (Scope):** `const` da `let` gibi blok kapsamına sahiptir.
+
+```javascript
+function example() {
+  if (true) {
+    const z = 10;
+    console.log(z); // 10
+  }
+  console.log(z); // ReferenceError: z is not defined
+}
+example();
+```
+
+- **Hoisting:** `const` değişkenleri de hoisted olur, ancak yine TDZ içinde yer alır, bu yüzden atamadan önce onlara erişemezsiniz.
+
+```javascript
+console.log(c); // ReferenceError: Cannot access 'c' before initialization
+const c = 5;
+```
+
+- **Yeniden Tanımlanabilirlik ve Yeniden Atama:** `const` ile tanımlanan değişkenler aynı kapsamda yeniden tanımlanamaz ve değerleri yeniden atanamaz. `const` sabit (constant) anlamına gelir ve tanımlandığı değerin sabit olacağını ima eder.
+
+```javascript
+const z = 10;
+z = 20; // TypeError: Assignment to constant variable.
+```
+
+Ancak, `const` ile tanımlanan bir nesne ya da dizi içindeki öğeler değiştirilebilir.
+
+```javascript
+const arr = [1, 2, 3];
+arr.push(4); // Bu geçerlidir.
+console.log(arr); // [1, 2, 3, 4]
+
+const obj = { key: "value" };
+obj.key = "newValue"; // Bu geçerlidir.
+console.log(obj); // { key: "newValue" }
+```
+
+### Özet
+- **Kapsam:** `var` fonksiyon kapsamına sahipken, `let` ve `const` blok kapsamına sahiptir.
+- **Hoisting:** `var` değişkenleri tanımlanmadan önce `undefined` dönerken, `let` ve `const` değişkenleri tanımlanmadan önce erişilirse hata verir.
+- **Yeniden Tanımlama:** `var` yeniden tanımlanabilirken, `let` ve `const` aynı kapsamda yeniden tanımlanamaz.
+- **Yeniden Atama:** `let` yeniden atanabilir, `const` ise atanamaz, ancak `const` ile tanımlanan nesne veya dizi içeriği değiştirilebilir.
+
+Bu farkları anlamak, JavaScript kodunun daha tutarlı ve hatasız olmasını sağlar.
