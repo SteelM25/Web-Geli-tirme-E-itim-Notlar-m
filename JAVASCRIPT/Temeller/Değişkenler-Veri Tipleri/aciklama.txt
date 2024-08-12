@@ -107,5 +107,6 @@ console.log(obj); // { key: "newValue" }
 - **Hoisting:** `var` değişkenleri tanımlanmadan önce `undefined` dönerken, `let` ve `const` değişkenleri tanımlanmadan önce erişilirse hata verir.
 - **Yeniden Tanımlama:** `var` yeniden tanımlanabilirken, `let` ve `const` aynı kapsamda yeniden tanımlanamaz.
 - **Yeniden Atama:** `let` yeniden atanabilir, `const` ise atanamaz, ancak `const` ile tanımlanan nesne veya dizi içeriği değiştirilebilir.
+Ayrıca let veri tipinde değişken atayıp sonradan değer verebiliriz. Ama const veri tipinde atanan değişkene değer vermemiz gerek.
 
 Bu farkları anlamak, JavaScript kodunun daha tutarlı ve hatasız olmasını sağlar.
