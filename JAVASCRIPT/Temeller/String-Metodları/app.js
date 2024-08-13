@@ -31,7 +31,7 @@ value = firstName.charAt(firstName.length-1); //* son elemanı döndürür.
 
 //? split
 
-value = langs.split(","); //* virgülü temel alarak stringi parçalar, dizi şeklinde döndürür.
+value = langs.split(","); //* virgülü temel alarak ayraç görevi görür, dizi şeklinde döndürür.
 
 //?replace
 
