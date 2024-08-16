@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        li{padding: 10px;}
+        a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: black;
+            padding: 5px;
+        }
+        a::before{
+            content: '\1F449';
+            padding: 3px;
+            border-radius: 50%;
+        }
+
+        a:hover{
+            background-color: aqua;
+            border-radius: 5px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(158, 50, 131);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>MovieApp</h1>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+</body>
+</html>
