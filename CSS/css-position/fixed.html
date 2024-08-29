@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .logo{
-            color: white;
-            background-color: purple;
-            padding: 10px;
-            width: 50px;
-            text-align: center;
-            position: fixed;
-            right: 10px;
-        }
-        p{
-            margin:50px;
-            display: inline-block;
-        }
+      .logo {
+        color: white;
+        background-color: purple;
+        padding: 10px;
+        width: 50px;
+        text-align: center;
+        position: fixed;
+        right: 10px;
+      }
+      p {
+        margin: 50px;
+        display: inline-block;
+      }
     </style>
-</head>
-<body style="height: 1000px;">
+  </head>
+  <body style="height: 1000px">
     <div class="logo">Udemy</div>
 
     <p>position:fixed yapınca sayfa aşağı kaysa bile öğe yerinde sabit kalır</p>
-    <hr>
-    <p>position:relative yapınca öğenin bulunduğu yerden konumunun değiştirilmesi sağlanır</p>
-    <hr>
-    <p>position:absolute yapınca öğenin kendisini kapsayan relative elementin sınırları içerisinde konumunun değiştirilmesi sağlanır.</p>
-</body>
+    <hr />
+    <p>
+      position:relative yapınca öğenin bulunduğu yerden konumunun değiştirilmesi
+      sağlanır
+    </p>
+    <hr />
+    <p>
+      position:absolute yapınca öğenin kendisini kapsayan relative elementin
+      sınırları içerisinde konumunun değiştirilmesi sağlanır. Eğer kapsayıcı bir
+      eleman yoksa öğe body'e göre konumlanır.
+    </p>
+  </body>
 </html>
