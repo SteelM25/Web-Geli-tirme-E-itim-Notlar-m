@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sticky{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body style="height: 1000px">
+    <div class="logo">Udemy</div>
+
+    <p>position:fixed yapınca sayfa aşağı kaysa bile öğe yerinde sabit kalır</p>
+    <hr />
+    <p>
+      position:relative yapınca öğenin bulunduğu yerden konumunun değiştirilmesi
+      sağlanır
+    </p>
+    <hr />
+    <p>
+      position:absolute yapınca öğenin kendisini kapsayan relative elementin
+      sınırları içerisinde konumunun değiştirilmesi sağlanır. Eğer kapsayıcı bir
+      eleman yoksa öğe body'e göre konumlanır.
+    </p><hr>
+    <p class="sticky">position:sticky yapınca öğe normal konumunda kalmaya devam eder ama ekran sınırına ulaşınca fixed özelliği göstererek top left konumları ne verilmişse ona göre fixed olarak sabit kalır.</p>
+  </body>
+</html>
