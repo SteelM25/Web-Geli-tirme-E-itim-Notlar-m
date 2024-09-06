@@ -10,9 +10,11 @@
         /* İçerikler border ve padding hesaba katılarak hesaplanır */
         box-sizing: border-box;
       }
+      body {
+        margin: 0;
+      }
       #showcase {
         background-color: rgb(34, 202, 202);
-        margin: 20px;
         padding: 10px;
         height: 500px;
       }
@@ -23,27 +25,38 @@
       }
       #how-it-works {
         background-color: rgb(231, 112, 112);
-        margin: 20px;
         padding: 10px;
       }
       nav {
         background-color: aqua;
         padding: 20px;
-        border: 5px solid blue;
+        /* border: 5px solid blue; */
       }
       a {
         padding: 5px;
-        border: 1px solid rgb(46, 46, 160);
-        border-radius: 5px;
+        /* border: 1px solid rgb(46, 46, 160);
+        border-radius: 5px; */
+      }
+      .main-header {
+        background-color: aqua;
+      }
+      .main-nav {
+        display: inline-block;
+        /* Toplam genişlikten BookApp yazısının genişliğini çıkardık. */
+        width: calc(100% - 77px);
+        text-align: right;
       }
     </style>
   </head>
   <body>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Books</a>
-      <a href="#">Contact</a>
-    </nav>
+    <header class="main-header">
+      <a href="#">BookApp</a>
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Books</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
 
     <main>
       <section id="showcase">
