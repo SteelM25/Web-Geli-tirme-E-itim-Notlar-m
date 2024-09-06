@@ -39,22 +39,51 @@
       }
       .main-header {
         background-color: aqua;
+        padding: 8px 16px;
       }
       .main-nav {
         display: inline-block;
         /* Toplam genişlikten BookApp yazısının genişliğini çıkardık. */
-        width: calc(100% - 77px);
+        width: calc(100% - 104px);
         text-align: right;
+      }
+      .main-nav__items{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .main-nav__item{
+        display: inline-block;
+        margin: 0 10px;
+      }
+      .main-header__logo{
+        color: black;
+        text-decoration: none;
+        font-weight:600;
+        font-size: 22px;
+      }
+      .main-nav__item a{
+        text-decoration: none;
+        color: red;
+        font-size: 19px;
       }
     </style>
   </head>
   <body>
     <header class="main-header">
-      <a href="#">BookApp</a>
+      <a href="#" class="main-header__logo">BookApp</a>
       <nav class="main-nav">
-        <a href="#">Home</a>
-        <a href="#">Books</a>
-        <a href="#">Contact</a>
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Books</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
