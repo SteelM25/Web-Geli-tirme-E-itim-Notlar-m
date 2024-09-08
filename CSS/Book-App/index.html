@@ -58,6 +58,7 @@
       .main-nav__item{
         display: inline-block;
         margin: 0 10px;
+        text-align: center;
       }
       .main-header__logo{
         color: black;
@@ -84,8 +85,17 @@
       }
       .main-nav__link:hover::before{
         color: yellow;
-        
       }
+
+      .login-buton,.login-buton::before{
+        background-color: blue;
+        color: yellow !important;
+      }
+      .login-buton:hover, .login-buton:hover::before{
+        background-color: rgb(0, 255, 0);
+        color: blue !important;
+      }
+
     </style>
   </head>
   <body>
@@ -94,13 +104,13 @@
       <nav class="main-nav">
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Home</a>
+            <a class="main-nav__link" href="#">Roman</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Books</a>
+            <a class="main-nav__link" href="#">Şiir</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Contact</a>
+            <a class="main-nav__link login-buton" href="#">Login</a>
           </li>
         </ul>
       </nav>
