@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0;
         /* İçerikler border ve padding hesaba katılarak hesaplanır */
         box-sizing: border-box;
+        font-family: "Dosis", sans-serif;
       }
       body {
         margin: 0;
@@ -21,7 +37,7 @@
         padding: 10px;
         height: 560px;
       }
-      
+
       #how-it-works {
         background-color: rgb(72, 255, 0);
         padding: 10px;
@@ -49,67 +65,111 @@
         width: calc(100% - 104px);
         text-align: right;
       }
-      .main-nav__items{
+      .main-nav__items {
         margin: 0;
         padding: 0;
         list-style: none;
       }
-      .main-nav__item{
+      .main-nav__item {
         display: inline-block;
         margin: 0 10px;
         text-align: center;
       }
-      .main-header__logo{
+      .main-header__logo {
         color: black;
         text-decoration: none;
-        font-weight:600;
+        font-weight: 600;
         font-size: 22px;
       }
-      .main-nav__item a{
+      .main-nav__item a {
         text-decoration: none;
         color: red;
         font-size: 19px;
         border: 2px inset green;
         border-radius: 10px;
       }
-      
-      .main-nav__link::before{
+
+      .main-nav__link::before {
         content: "\2605";
         color: blue;
       }
-      .main-nav__link:hover{
+      .main-nav__link:hover {
         color: rgb(0, 255, 0);
         border-color: yellow;
         background-color: rgb(5, 48, 48);
       }
-      .main-nav__link:hover::before{
+      .main-nav__link:hover::before {
         color: yellow;
       }
 
-      .login-buton,.login-buton::before{
+      .login-buton,
+      .login-buton::before {
         background-color: blue;
         color: yellow !important;
       }
-      .login-buton:hover, .login-buton:hover::before{
+      .login-buton:hover,
+      .login-buton:hover::before {
         background-color: rgb(0, 255, 0);
         color: blue !important;
       }
-      #how-it-works p, #how-it-works h2{
+      #how-it-works p,
+      #how-it-works h2 {
         text-align: center;
         margin-bottom: 10px;
       }
-      .plans{text-align: center;}
-      .plan{
+      .plans {
+        text-align: center;
+      }
+      .plan {
         width: 30%;
         display: inline-block;
         text-align: center;
         padding: 5px;
       }
-      .plan i{
+      .plan i {
         font-size: 1.5rem;
         color: blue;
       }
-
+      .resim,.icerik{
+        width: 49%;
+        display: inline-block;
+        height: 400px;
+        vertical-align: top;
+        background-color: rgb(132, 0, 255);
+      }
+      .resim{
+        background-image: url("ai-generated-7715246_1280.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .icerik{
+        background-color: rgb(95, 44, 44);
+        padding: 40px;
+      }
+      .icerik h3{
+        margin-top: 30px;
+        font-size: 1.3rem;
+        color: yellow;
+      }
+      .icerik p{
+        margin-bottom: 10px;
+        color: white;
+      }
+      .icerik a{
+        text-decoration: none;
+        background-color: rgb(28, 28, 216);
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        border: 2px inset white;
+      }
+      .icerik a:hover{
+        border-color: rgb(0, 255, 0);
+        color: blue;
+        background-color: white;
+      }
+      
     </style>
   </head>
   <body>
@@ -136,25 +196,51 @@
       </section>
       <section id="how-it-works">
         <h2>How It Works</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, necessitatibus.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+          necessitatibus.
+        </p>
 
         <div class="plans">
           <div class="plan">
             <i class="fa-solid fa-key"></i>
             <h3>Register</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia delectus ea perferendis sequi velit, excepturi fuga. Voluptas, maxime enim!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              officia delectus ea perferendis sequi velit, excepturi fuga.
+              Voluptas, maxime enim!
+            </p>
           </div>
           <div class="plan">
-          <i class="fa-solid fa-arrow-pointer"></i>
+            <i class="fa-solid fa-arrow-pointer"></i>
             <h3>Choose A Plan</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia delectus ea perferendis sequi velit, excepturi fuga. Voluptas, maxime enim!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              officia delectus ea perferendis sequi velit, excepturi fuga.
+              Voluptas, maxime enim!
+            </p>
           </div>
           <div class="plan">
             <i class="fa-solid fa-book-open"></i>
             <h3>Enjoy Reading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia delectus ea perferendis sequi velit, excepturi fuga. Voluptas, maxime enim!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              officia delectus ea perferendis sequi velit, excepturi fuga.
+              Voluptas, maxime enim!
+            </p>
           </div>
-          
+        </div>
+      </section>
+      <section id="features">
+        <div class="resim"></div>
+        <div class="icerik">
+          <h3>Yeni Çıkan Romanı Dene</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+            rerum animi laborum, reiciendis blanditiis delectus. Nam excepturi
+            reiciendis sint magni!
+          </p>
+          <a href="#">Kitaba Git</a>
         </div>
       </section>
     </main>
