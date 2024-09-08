@@ -16,7 +16,7 @@
       #showcase {
         background-color: rgb(34, 202, 202);
         padding: 10px;
-        height: 500px;
+        height: 560px;
       }
       h1 {
         padding: 10px;
@@ -26,6 +26,9 @@
       #how-it-works {
         background-color: rgb(231, 112, 112);
         padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
       }
       nav {
         background-color: aqua;
@@ -66,6 +69,21 @@
         text-decoration: none;
         color: red;
         font-size: 19px;
+        border: 2px inset green;
+        border-radius: 10px;
+      }
+      
+      .main-nav__link::before{
+        content: "\2605";
+        color: blue;
+      }
+      .main-nav__link:hover{
+        color: green;
+        border-color: yellow;
+      }
+      .main-nav__link:hover::before{
+        color: red;
+        
       }
     </style>
   </head>
