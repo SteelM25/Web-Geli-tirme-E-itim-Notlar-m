@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      #container {
+        background-color: aqua;
+      }
       .box {
         width: 150px;
         height: 150px;
@@ -15,13 +18,26 @@
       .box-1 {
         float: left;
       }
+      /* 2. yöntem. Kapsayıcı elemandan sonra boş bir block eleman oluşturup clear both yapabiliriz. */
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
     </style>
   </head>
   <body>
-    <div id="container">
+    <div id="container" class="clearfix">
       <div class="box box-1"></div>
       <div class="box"></div>
       <div class="box"></div>
+      <!--1.yöntem. Float yaptıktan sonra sonraki elemanların normal akışta devam etmesi için boş bir eleman oluşturup style özelliğinde clear:both veya clear:right veya left yapmalıyız. -->
+      <!-- <div style="clear: both"></div> -->
     </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum laborum
+      accusamus corporis odit eum at tenetur magni praesentium quia, fugiat
+      sequi vero quisquam, ea error sit aut, ad ab facere?
+    </p>
   </body>
 </html>
