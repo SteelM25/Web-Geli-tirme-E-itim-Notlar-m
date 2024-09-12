@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images</title>
+    <style>
+        img{
+            float: left;
+            width: 350px;
+            margin-right: 10px;
+        }
+        p{
+            border: 2px inset red;
+        }
+        
+        /* 2.YÖNTEM */
+        .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab nam aliquam dolorem tempore sint corrupti placeat deserunt rerum explicabo deleniti dolores, suscipit dolorum ipsum, recusandae laborum provident facere eveniet.</p>
+
+    <p class="clear">
+        <img src="night-3505.gif" alt="">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quis, autem dolores, repudiandae voluptates perspiciatis quam, dicta temporibus quidem quaerat quod ab ea maiores magni facilis hic ullam expedita quibusdam?</span>
+    </p>
+    
+    <!-- 1. YÖNTEM -->
+    <!-- <div style="clear: both;"></div> -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati temporibus quibusdam aliquam, quas aspernatur eaque pariatur doloremque debitis quae. Expedita aspernatur quis aliquam recusandae assumenda impedit aut obcaecati porro temporibus!</p>
+
+</body>
+</html>
