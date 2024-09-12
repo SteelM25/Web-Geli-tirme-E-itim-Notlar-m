@@ -130,31 +130,32 @@
         font-size: 1.5rem;
         color: blue;
       }
-      .resim,.icerik{
+      .resim,
+      .icerik {
         width: 49%;
         display: inline-block;
         height: 400px;
         vertical-align: top;
       }
-      .resim{
+      .resim {
         background-image: url("ai-generated-7715246_1280.jpg");
         background-size: cover;
         background-position: center;
       }
-      .icerik{
+      .icerik {
         background-color: rgb(24, 70, 139);
         padding: 40px;
       }
-      .icerik h3{
+      .icerik h3 {
         margin-top: 30px;
         font-size: 1.3rem;
         color: yellow;
       }
-      .icerik p{
+      .icerik p {
         margin-bottom: 20px;
         color: white;
       }
-      .icerik a{
+      .icerik a {
         text-decoration: none;
         background-color: rgb(28, 28, 216);
         border-radius: 10px;
@@ -163,12 +164,48 @@
         font-size: 1rem;
         border: 2px inset white;
       }
-      .icerik a:hover{
+      .icerik a:hover {
         border-color: rgb(0, 255, 0);
         color: blue;
         background-color: white;
       }
-      
+      #plans2 {
+        text-align: center;
+      }
+      .plans2 {
+        width: 1000px;
+        margin: 10px auto;
+      }
+      .plans2::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .plan2 {
+        background-color: white;
+        padding: 10px;
+        float: left;
+        text-align: center;
+        align-items: center;
+        width: 33.3%;
+      }
+      .plan2 ul {
+        margin-bottom: 15px;
+      }
+      .plan2 a {
+        text-decoration: none;
+        padding: 5px;
+        border: 1px solid red;
+        border-radius: 5px;
+        background-color: rgb(9, 131, 131);
+        color: white;
+      }
+
+      /* Margin vermeden iç bir kapsayıcı ekleyerek planlar arasında boşluk varmış gibi görünmesini sağladık. */
+      .inner-plan {
+        background-color: aqua;
+        padding: 15px;
+      }
     </style>
   </head>
   <body>
@@ -240,6 +277,50 @@
             reiciendis sint magni!
           </p>
           <a href="#">Kitaba Git</a>
+        </div>
+      </section>
+      <section id="plans2">
+        <h2>Become A Premium Member</h2>
+        <div class="plans2">
+          <div class="plan2">
+            <div class="inner-plan">
+              <h3>Free</h3>
+              <h4>0/month</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <a href="#">Choose Plan</a>
+            </div>
+          </div>
+          <div class="plan2">
+            <div class="inner-plan">
+              <h3>Free</h3>
+              <h4>0/month</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <a href="#">Choose Plan</a>
+            </div>
+          </div>
+          <div class="plan2">
+            <div class="inner-plan">
+              <h3>Free</h3>
+              <h4>0/month</h4>
+              <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+              </ul>
+              <a href="#">Choose Plan</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
