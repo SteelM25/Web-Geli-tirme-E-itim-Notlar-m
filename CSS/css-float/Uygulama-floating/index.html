@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uygulama Floating</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Yan yana almak istediğimiz elemanların ikisine de float:left dedim */
+      article {
+        float: left;
+        padding: 15px;
+        width: 25%;
+      }
+      .article-baslik {
+        padding: 10px;
+        background-color: rgb(54, 9, 95);
+        border: 1px solid black;
+        margin-bottom: 10px;
+        color: white;
+      }
+      .article-baslik:hover{
+        cursor: pointer;
+        background-color: rgb(114, 21, 201);
+      }
+      main::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      header,
+      footer {
+        background-color: blueviolet;
+        padding: 10px;
+      }
+      section {
+        float: left;
+        width: 75%;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HEADER</h1>
+    </header>
+
+    <main>
+      <article>
+        <div class="article-baslik">HTML</div>
+        <div class="article-baslik">HTML</div>
+        <div class="article-baslik">HTML</div>
+      </article>
+
+      <section>
+        <h1>KOMPLE WEB GELİŞTİRME EĞİTİMİ</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+          similique, et cupiditate veritatis explicabo cumque, qui assumenda
+          nostrum porro provident blanditiis officia at, optio omnis officiis
+          incidunt perspiciatis ut. Distinctio!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <h1>FOOTER</h1>
+    </footer>
+  </body>
+</html>
